@@ -1,0 +1,112 @@
+/* Autores: Victor Gabriel Purkott Coelho & Brayan Carvalho */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #000000, #b65607); /* Gradiente linear da esquerda para a direita */
+    color: #fff; /* Texto branco */
+    font-family: Arial, sans-serif; /* Fonte */
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bolhas{
+    position: relative;
+    display: flex;
+}
+
+.bolhas span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 10px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+
+.bolhas span:nth-child(even){
+    background: #b65607;
+    box-shadow: 0 0 0 10px #6e3506, 0 0 50px #9e4c08, 0 0 100px #9e4c08;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(-10vh) scale(1);
+    }
+}
+
+.calculadora {
+    background-color: #333; /* Cor de fundo escura para a calculadora */
+    border-radius: 10px; /* Borda arredondada */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 0 10px rgb(255, 136, 0); /* Sombra */
+    max-width: 400px; /* Largura máxima */
+    margin: auto; /* Centraliza horizontalmente */
+    position: fixed; /* Calculadora fixa na tela */
+    top: 50%; /* 50% do topo */
+    left: 50%; /* 50% da esquerda */
+    transform: translate(-50%, -50%); /* Centraliza vertical e horizontalmente */
+}
+
+h2 {
+    color: #fff; /* Texto branco para cabeçalhos */
+}
+
+label {
+    color: #fff; /* Texto branco para rótulos */
+}
+
+input[type="number"],
+select,
+input[type="text"],
+textarea {
+    background-color: #444; /* Cor de fundo escura para inputs */
+    color: #fff; /* Texto branco */
+    border: none; /* Remove borda */
+    border-radius: 5px; /* Borda arredondada */
+    padding: 8px 10px; /* Espaçamento interno */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+input[type="submit"] {
+    background-color: #666; /* Cor de fundo dos botões */
+    color: #fff; /* Texto branco */
+    border: none; /* Remove borda */
+    border-radius: 5px; /* Borda arredondada */
+    padding: 10px 20px; /* Espaçamento interno */
+    cursor: pointer; /* Cursor de mão ao passar */
+    margin-right: 10px; /* Espaçamento direito */
+}
+
+input[type="submit"]:hover {
+    background-color: #555; /* Cor de fundo dos botões ao passar */
+    box-shadow: 0 0 10px 2px rgb(255, 136, 0); /* Efeito neon laranja */
+}
+
+textarea {
+    background-color: #444; /* Cor de fundo escura para textarea */
+    resize: none; /* Impede redimensionamento */
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
