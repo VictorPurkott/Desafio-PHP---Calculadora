@@ -8,9 +8,9 @@
 }
 
 body {
-    background: linear-gradient(to right, #000000, #b65607); /* Gradiente linear da esquerda para a direita */
-    color: #fff; /* Texto branco */
-    font-family: Arial, sans-serif; /* Fonte */
+    background: linear-gradient(to right, #000000, #b65607); 
+    color: #fff; 
+    font-family: Arial, sans-serif; 
     min-height: 100vh;
 }
 
@@ -53,56 +53,56 @@ body {
 }
 
 .calculadora {
-    background-color: #333; /* Cor de fundo escura para a calculadora */
-    border-radius: 10px; /* Borda arredondada */
-    padding: 20px; /* Espaçamento interno */
-    box-shadow: 0 0 10px rgb(255, 136, 0); /* Sombra */
-    max-width: 400px; /* Largura máxima */
-    margin: auto; /* Centraliza horizontalmente */
-    position: fixed; /* Calculadora fixa na tela */
-    top: 50%; /* 50% do topo */
-    left: 50%; /* 50% da esquerda */
-    transform: translate(-50%, -50%); /* Centraliza vertical e horizontalmente */
+    background-color: #333; 
+    border-radius: 10px; 
+    padding: 20px; 
+    box-shadow: 0 0 10px rgb(255, 136, 0); 
+    max-width: 400px; 
+    margin: auto; 
+    position: fixed;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
 }
 
 h2 {
-    color: #fff; /* Texto branco para cabeçalhos */
+    color: #fff; 
 }
 
 label {
-    color: #fff; /* Texto branco para rótulos */
+    color: #fff; 
 }
 
 input[type="number"],
 select,
 input[type="text"],
 textarea {
-    background-color: #444; /* Cor de fundo escura para inputs */
-    color: #fff; /* Texto branco */
-    border: none; /* Remove borda */
-    border-radius: 5px; /* Borda arredondada */
-    padding: 8px 10px; /* Espaçamento interno */
-    margin-bottom: 10px; /* Espaçamento inferior */
+    background-color: #444; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 8px 10px; 
+    margin-bottom: 10px; 
 }
 
 input[type="submit"] {
-    background-color: #666; /* Cor de fundo dos botões */
-    color: #fff; /* Texto branco */
-    border: none; /* Remove borda */
-    border-radius: 5px; /* Borda arredondada */
-    padding: 10px 20px; /* Espaçamento interno */
-    cursor: pointer; /* Cursor de mão ao passar */
-    margin-right: 10px; /* Espaçamento direito */
+    background-color: #666; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    margin-right: 10px; 
 }
 
 input[type="submit"]:hover {
-    background-color: #555; /* Cor de fundo dos botões ao passar */
-    box-shadow: 0 0 10px 2px rgb(255, 136, 0); /* Efeito neon laranja */
+    background-color: #555; 
+    box-shadow: 0 0 10px 2px rgb(255, 136, 0); 
 }
 
 textarea {
-    background-color: #444; /* Cor de fundo escura para textarea */
-    resize: none; /* Impede redimensionamento */
+    background-color: #444;
+    resize: none;
 }
 body, html {
     height: 100%;
