@@ -37,11 +37,11 @@
         </div>
     </div>
     <div class="calculadora">
-        <h2>Calculadora PHP</h2>
+        <h2>Calculadora - PHP</h2>
         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-            <label for="num1">Número 1:</label><br>
+            <label for="num1">Insira o 1º Número:</label><br>
             <input type="number" id="num1" name="num1" value="<?php if(isset($_POST['num1'])) echo $_POST['num1']; ?>" ><br><br>
-            <label for="op">Operador:</label><br>
+            <label for="op">Escolha o Operador:</label><br>
             <select id="op" name="op">
                 <option value="+" <?php if(isset($_POST['op']) && $_POST['op'] == '+') echo 'selected'; ?>>+</option>
                 <option value="-" <?php if(isset($_POST['op']) && $_POST['op'] == '-') echo 'selected'; ?>>-</option>
@@ -51,7 +51,7 @@
                 <option value="n!" <?php if(isset($_POST['op']) && $_POST['op'] == 'n!') echo 'selected'; ?>>n!</option>
             </select><br><br>
             
-            <label for="num2">Número 2:</label><br>
+            <label for="num2">Insira o 2º Número:</label><br>
                 <input type="number" id="num2" name="num2" value="<?php if(isset($_POST['num2'])) echo $_POST['num2']; ?>" ><br><br>
                     <label for="resultado">Resultado:</label><br>
                         <input type="text" id="resultado" name="resultado" value="<?php if(isset($result)) echo $result; ?>" readonly><br><br>
@@ -67,7 +67,7 @@
                     echo "$calc\n";
                 }
             } else {
-                echo "Nenhuma operação realizada ainda.";
+                echo "Nenhuma operação realizada até o momento.";
             }
         ?></textarea>
     </div>
